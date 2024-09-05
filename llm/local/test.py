@@ -2,10 +2,10 @@ import json
 
 import requests
 
-base_url = "http://localhost:8000"
-
-url = f"{base_url}/api/v1/query"
 def main():
+    host_ip = input("Enter host IP: ")
+    base_url = f"http://{host_ip}:8000"
+    url = f"{base_url}/api/v1/chat"
     while True:
         query = input("Query: ")
         payload = {
