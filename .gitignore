@@ -2,3 +2,4 @@ llm/remote/.idea
 llm/remote/model
 llm/remote/chromaDB
 llm/remote/storage
+.idea
