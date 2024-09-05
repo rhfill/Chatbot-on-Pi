@@ -12,7 +12,7 @@ git clone https://github.com/rhfill/Chatbot-on-Pi.git
 
 2. Install necessarry dependencies:
 ```bash
- git clone https://github.com/rhfill/Chatbot-on-Pi.git
+ python install -r requirements.txt
 ```
 
 3. Download a llamafile model and run it on port 8080
@@ -31,6 +31,7 @@ git clone https://github.com/rhfill/Chatbot-on-Pi.git
 
    Run `create_db.py` to ingest documents into the database.
    ```bash
+   cd llm/remote
    python create_db.py
    ```
    Before running the script, make sure t add the URLs you want to scrape to `llm/remote/urls.txt` in the following format:
