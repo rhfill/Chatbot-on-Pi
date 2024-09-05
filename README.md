@@ -1,2 +1,4 @@
 # Chatbot-on-Pi
-TBD
+NOTE:This is an incomplete project.
+
+## Prerequisites
