@@ -10,39 +10,38 @@ Python 3.8 or higher.
 git clone https://github.com/rhfill/Chatbot-on-Pi.git
 ```
 
-2. Install dependencies:
+2. Install necessarry dependencies:
 ```bash
  git clone https://github.com/rhfill/Chatbot-on-Pi.git
 ```
 
 3. Download a llamafile model and run it on port 8080
 
-   Link: [https://github.com/Mozilla-Ocho/llamafile]
-   Assume you've downloaded `Meta-Llama-3-8B-Instruct.Q5_K_M.llamafile`, now you need to make
-   the llamafile executable:
+   You can find the models at [https://github.com/Mozilla-Ocho/llamafile].
+   For this example, assume you've downloaded `Meta-Llama-3-8B-Instruct.Q5_K_M.llamafile`. Make
+   the llamafile executable with:
    ```bash
    chmod +x Meta-Llama-3-8B-Instruct.Q5_K_M.llamafile
    ```
-   Then start the llamafile in server mode.  
+   Then run the llamafile in server mode:
    ```bash
    ./Meta-Llama-3-8B-Instruct.Q5_K_M.llamafile --server --nobrowser --embedding --port 8080
    ```
-4. Create ChromaDB
+4. Create Index & Create ChromaDB
 
-   Run `create_db.py` to ingest documents into the system.
+   Run `create_db.py` to ingest documents into the database.
    ```bash
    python create_db.py
    ```
-   Before running the script, you need to place the URLs you want to scrape under `llm/remote/urls.txt`
-   The format should be like this:
+   Before running the script, make sure t add the URLs you want to scrape to `llm/remote/urls.txt` in the following format:
    ```
    https://en.wikipedia.org/wiki/Elon_Musk
    https://en.wikipedia.org/wiki/SpaceX
    ```
-   The script will ask you to input the name of the collection.
+   The script will prompt you to input the name of the collection.
 5. Run Chat & Query Server
 
    ```bash
    python server.py
    ```
-   The server will now run on port `8000`. See `llm/local/test.py` to know how to interact with the server.
+   The server will now run on port `8000`. Check out `llm/local/test.py` to see how to interact with the server.
