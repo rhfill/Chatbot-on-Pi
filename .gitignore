@@ -3,3 +3,4 @@ llm/remote/model
 llm/remote/chromaDB
 llm/remote/storage
 .idea
+.DS_Store
