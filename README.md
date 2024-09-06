@@ -34,7 +34,7 @@ git clone https://github.com/rhfill/Chatbot-on-Pi.git
    cd llm/remote
    python create_db.py
    ```
-   Before running the script, make sure t add the URLs you want to scrape to `llm/remote/urls.txt` in the following format:
+   Before running the script, make sure to add the URLs you want to scrape to `llm/remote/urls.txt` in the following format:
    ```
    https://en.wikipedia.org/wiki/Elon_Musk
    https://en.wikipedia.org/wiki/SpaceX
