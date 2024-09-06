@@ -1,5 +1,5 @@
 # Chatbot-on-Pi
-NOTE:This is an incomplete project.
+**NOTE:This is an incomplete project.**
 
 ## Prerequisites
 Python 3.8 or higher. 
